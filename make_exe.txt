@@ -1,0 +1,16 @@
+"""
+pyinstaller -D -w main.py `
+  --name RbPi_Console `
+  --icon app.ico `
+  --add-data "app.ico;." `
+  --add-data "ssh_console.py;." `
+  --add-data "raspberry_pi_console/ui/styles.qss;raspberry_pi_console/ui" `
+  --collect-submodules raspberry_pi_console `
+  --hidden-import=ssh_console `
+  --hidden-import=paramiko `
+  --hidden-import=cryptography `
+  --hidden-import=bcrypt `
+  --hidden-import=nacl `
+  --clean `
+  --noconfirm
+"""

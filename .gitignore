@@ -1,0 +1,14 @@
+﻿.venv/
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+.idea/
+.codegraph/
+.cursor/
+.understand-anything/
+备份/
+*.rar
+*.zip
+metrics_history.db
